@@ -38,9 +38,15 @@ main {
 .div2 {
     background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg');
     background-size: cover;
-    margin:auto;
+    margin:0px 0px 0px 0px;
+    padding: 0px;
 }
-div2.p {
+pp2 {
+    width:300px;
+    height:300px;
+    color:white;
+}
+div2a.p {
     background-color: black;
     opacity: 0.5;
     size: 50%;
