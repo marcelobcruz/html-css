@@ -1,56 +1,56 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@700&family=Righteous&family=Sarala&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+
+:root {
+    --fonte3:'Sriracha', cursive;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One',cursive;
+}
 
 * {
     margin:0px;
     padding:0px;
 }
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
 header {
     background-color: black;
     color: white;
-    padding:50px;
+    padding: 50px;
     text-align: center;
+    font-family: var(--fonte2);
 }
+
 header>h1 {
-    font-family: 'Passion One';
-    font-size: 102px;
+    font-family: var(--fonte2);
+    font-size: 10vw;
     text-align: center;
     margin:auto;
     font-variant: small-caps; /* tem que ter sido digitado em minusculo, la no html */
-
 }
+
 header >p {
     text-align: center;
-    font-family: Verdana;
-    /*font-family: 'Sriracha', cursive;*/
-    
-}
-body{
-    margin:0px;
-    min-height: 100vh;
-    background-color: darkgray;
-
-}
-/*
-main {
-    font-family: 'Sriracha', cursive;
-    font-size:36px;
-    height:72px;
-    margin-left: 40px;
 }
 
-.div2 {
-    background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg');
-    background-size: cover;
-    margin:0px 0px 0px 0px;
-    padding: 0px;
-}*/
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;    
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 section.normal {
     color:black;
@@ -63,9 +63,21 @@ section.imagem{
 }
 
 section.imagem > p {
+    display: inline-block;
     background-color: rgb(20, 20, 20);
     width: 400px;
+    padding: 5px;
+    text-shadow: 1px 2px  0px black;
 /*    opacity:0.5;*/
+}
+
+section#img01 {
+background-image: url(''../imagens/background001.jpg'');
+background-position: right center;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
