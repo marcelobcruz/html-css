@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position:relative;
+        }
+        td,th {
+            border:1px solid black;
+
+            padding: 10px;
+            
+
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th { /* ISSO É PARA FIXAR O CABECALHO DA TABELA NO TOPO*/
+            position:sticky;
+            top:-1PX;;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n) { /* zebrado!!!! facil facil *  no lugar do 2N, pode colocar para impar odd ou even que é par*/
+            background-color:lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia das tabelas
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    
+    -->
+<table>
+    <caption>População das unidades federativas</caption>
+<thead>
+        <th scope="col">Estado </th>
+        <th scope="col" style="width:90px;"> População</th>
+</thead>
+
+<tbody>
+    <tr>
+        <td>SP</td>
+        <td>45 919 049</td>
+    </tr>
+    <tr>
+        <td>RJ</td>
+        <td>5 919 021</td>
+    </tr>
+    <TR>
+        <td>MG</td>
+        <td>41 519 033</td>
+    </TR>
+    <tr>
+        <td>SP</td>
+        <td>45 919 049</td>
+    </tr>
+    <tr>
+        <td>RJ</td>
+        <td>5 919 021</td>
+    </tr>
+    <TR>
+        <td>MG</td>
+        <td>41 519 033</td>
+    </TR>
+    <tr>
+        <td>SP</td>
+        <td>45 919 049</td>
+    </tr>
+    <tr>
+        <td>RJ</td>
+        <td>5 919 021</td>
+    </tr>
+    <TR>
+        <td>MG</td>
+        <td>41 519 033</td>
+    </TR>
+    <tr>
+        <td>SP</td>
+        <td>45 919 049</td>
+    </tr>
+    <tr>
+        <td>RJ</td>
+        <td>5 919 021</td>
+    </tr>
+    <TR>
+        <td>MG</td>
+        <td>41 519 033</td>
+    </TR>
+    <tr>
+        <td>SP</td>
+        <td>45 919 049</td>
+    </tr>
+    <tr>
+        <td>RJ</td>
+        <td>5 919 021</td>
+    </tr>
+    <TR>
+        <td>MG</td>
+        <td>41 519 033</td>
+    </TR>
+    <tr>
+        <td>SP</td>
+        <td>45 919 049</td>
+    </tr>
+    <tr>
+        <td>RJ</td>
+        <td>5 919 021</td>
+    </tr>
+    <TR>
+        <td>MG</td>
+        <td>41 519 033</td>
+    </TR>
+</tbody>
+<tfoot>
+    <th scope="row">Total de habitantes</th>
+    <td>100 919 049</td>
+</tfoot>
+</table>
+
+</body>
+</html>
